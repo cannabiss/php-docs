@@ -39,19 +39,19 @@ __Description catalogs:__
 
 - `/configs`:
     - `config-sample.inc`: A sample configuration file:
-        - `date_default_timezone_set - timezone sets used in the system default;
-        - `array db` - задает параметры соединения с SQL базой;
+        - `date_default_timezone_set` - timezone sets used in the system default;
+        - `array db` - sets the connection to SQL database;
 
 - `/common`:
-Содержит в себе весь базовый набор классов и функций, необходимых для работы системы.
-    - `auth.php`: Класс "Auth" содержащий функционал, необходимый для авторизации в систеиме;
-    - `common.php`: Базовй функционал;
-    - `components.php`: Класс "Components", формирующий основные блоки интерфейса системы;
-    - `db.php`: Класс "database" - Набор основных функций работы с базой данных MySQL;
-    - `incFiles.php`: Класс "IncFiles", предназначенный для быстрой подгрузки необходимых модулей;
-    - `managerUrl.php`: Класс "managerUrl", необходимый для получения текущих страниц и редиректа;
-    - ``menu.php`: Класс "Menu", отвечающий за динамическое формирование меню страниц;
-    - `model.php`: Класс "Model", описывающий базовые функции построения моделей;
-    - `route.php`: Класс "Route", необходимый для осуществления роутинга в системе;
-    - `tableManager.php`: Класс "tableManager", необходимый для динамического построения таблиц в системе;
-    - `view.php`: Класс "View", необходимый для подгрузки шаблонов и статичных блоков для отображения;
+Contains all the basic set of classes and functions needed to operate the system.
+    - `auth.php`: Class "Auth" contains functionality necessary for authorization in sisteime;
+    - `common.php`: Basic functionality;
+    - `components.php`: Class "Components", which forms the basic building blocks of the system interface;
+    - `db.php`: Класс "database" - Set the basic functions work with a MySQL database;
+    - `incFiles.php`: Class "IncFiles", designed for fast-loading the required modules;
+    - `managerUrl.php`: Class "managerUrl", required for the current page and redirect;
+    - ``menu.php`: Class "Menu", responsible for the formation of a dynamic menu pages;
+    - `model.php`: Class "Model", which describes the basic functions of building models;
+    - `route.php`: Class "Route", necessary for the implementation of the routing system;
+    - `tableManager.php`: Class "tableManager", necessary to dynamically build tables in the system;
+    - `view.php`: Class "View", required to load templates and static blocks to display;
