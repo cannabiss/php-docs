@@ -1,0 +1,10 @@
+syntax: glob
+configs/config.inc
+log/*
+tmp/*
+logs/*
+vendor/*
+.idea/*
+\.orig\..*$
+\.orig$
+composer.lock
