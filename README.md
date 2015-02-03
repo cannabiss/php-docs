@@ -1,53 +1,57 @@
-Система ведения рабочей документации.
+__The system of reference of the working documentation.__
 
-Используемые модели:
-    - Model-View-Controller;
+__Used models:__
 
-Предназначение:
-    - Быстрое ведение рабочих документов;
+- Model-View-Controller;
 
-Используемые языки программирования:
-    - PHP5.5;
-    - JavaScript;
+__Destination:__
 
-Используемые библиотеки:
-    - Bootstrap 3;
-    - JQuery;
+- Expeditious conduct of the working documents;
 
-Используемые БД:
-    - MySql;
+__Used programming languages:__
+    
+- *PHP5.5*;
+- *JavaScript*;
 
-Описание секций:
-    /:
-        - .hgignore: Файл настройки игнорируемых каталогов и файлов системы контроля версий Mercurial;
-        - index.php: Стартовый файл проекта (чтение конфигурационного файла, соединение с базой данных, загрузка необходимых модулей системы);
-        - composer.json: Файл настроек пакета composer с описанием зависимостей и автозагрузчика;
+__Libraries:__
 
-    /sqlbase:
-        - db_query: Файл поддержания актуальности базы данных проекта (содержит все SQL-запросы, необходимые для приведения схемы базы данных к актульному состоянию);
-        - documents.sql: Файл дампа SQL базы проекта с базовой структурой;
+- *Bootstrap 3*;
+- *JQuery*;
 
-    /libs:
-        - js: Каталог, содержащий необходимые для работы тех или ных функций, JavaScript файлы;
-        - bootstrap (css, fonts, js): Библиотека Bootstrap 3.0, неоюходимая для построения интерфейса системы;
+__Used database:__
 
-    /configs:
-        config-sample.inc: Образец конфигурационного файла:
-            * date_default_timezone_set - задает таймзону, используемую в системе по умолчанию;
-            * массив db - задает параметры соединения с SQL базой;
+- *MySql*;
 
-    /common:
-        Содержит в себе весь базовый набор классов и функций, необходимых для работы системы.
-            - auth.php: Класс "Auth" содержащий функционал, необходимый для авторизации в систеиме;
-            - common.php: Базовй функционал;
-            - components.php: Класс "Components", формирующий основные блоки интерфейса системы;
-            - db.php: Класс "database" - Набор основных функций работы с базой данных MySQL;
-            - incFiles.php: Класс "IncFiles", предназначенный для быстрой подгрузки необходимых модулей;
-            - managerUrl.php: Класс "managerUrl", необходимый для получения текущих страниц и редиректа;
-            - menu.php: Класс "Menu", отвечающий за динамическое формирование меню страниц;
-            - model.php: Класс "Model", описывающий базовые функции построения моделей;
-            - route.php: Класс "Route", необходимый для осуществления роутинга в системе;
-            - tableManager.php: Класс "tableManager", необходимый для динамического построения таблиц в системе;
-            - view.php: Класс "View", необходимый для подгрузки шаблонов и статичных блоков для отображения;
+__Description catalogs:__
 
-    /classes:
+- `/:`
+    - `.gitignore`: Configuration file to ignore directories and files Git version control;
+    - `index.php`: Starting a project file (read the configuration file, the database connection, load the appropriate modules);
+    - `composer.json`: Configuration file package composer describing dependencies and autoloader;
+
+- `/sqlbase`:
+    - `db_query`: File maintain the relevance of the project database (contains all the SQL-queries required to bring the database schema to the state Fidler);
+    - `documents.sql`: SQL database dump file with the basic structure of the project;
+
+- `/libs`:
+    - `js`: The directory containing the necessary work for those functions or, JavaScript files;
+    - `bootstrap (css, fonts, js)`: Library Bootstrap 3.0, neoyuhodimaya to build an interface system;
+
+- `/configs`:
+    - `config-sample.inc`: A sample configuration file:
+        - `date_default_timezone_set - timezone sets used in the system default;
+        - `array db` - задает параметры соединения с SQL базой;
+
+- `/common`:
+Содержит в себе весь базовый набор классов и функций, необходимых для работы системы.
+    - `auth.php`: Класс "Auth" содержащий функционал, необходимый для авторизации в систеиме;
+    - `common.php`: Базовй функционал;
+    - `components.php`: Класс "Components", формирующий основные блоки интерфейса системы;
+    - `db.php`: Класс "database" - Набор основных функций работы с базой данных MySQL;
+    - `incFiles.php`: Класс "IncFiles", предназначенный для быстрой подгрузки необходимых модулей;
+    - `managerUrl.php`: Класс "managerUrl", необходимый для получения текущих страниц и редиректа;
+    - ``menu.php`: Класс "Menu", отвечающий за динамическое формирование меню страниц;
+    - `model.php`: Класс "Model", описывающий базовые функции построения моделей;
+    - `route.php`: Класс "Route", необходимый для осуществления роутинга в системе;
+    - `tableManager.php`: Класс "tableManager", необходимый для динамического построения таблиц в системе;
+    - `view.php`: Класс "View", необходимый для подгрузки шаблонов и статичных блоков для отображения;
