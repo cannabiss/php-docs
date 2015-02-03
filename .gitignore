@@ -1,4 +1,3 @@
-syntax: glob
 configs/config.inc
 log/*
 tmp/*

@@ -1,0 +1,22 @@
+Requests for the current version of the database.
+
+Format:
+     Date:
+       1) Request (Separator "," to perform the entire package requests);
+       2) A request to update the version of the database;
+
+16.03.2014:
+      ALTER TABLE `chapter` ADD `user_id` INT( 255 ) NOT NULL ;
+      UPDATE db_version SET current_version =2;
+
+24.03.2014:
+      1) CREATE TABLE news (name VARCHAR(50));
+      2) ALTER TABLE `news` CHANGE `name` `name` VARCHAR( 50 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL ;
+      3) ALTER TABLE `news` ADD `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ;
+      4) ALTER TABLE `news` ADD `date_create` DATE NOT NULL ;
+      5) ALTER TABLE `news` ADD `date_update` DATE NULL DEFAULT NULL ;
+      6) ALTER TABLE `news` ADD `description` TEXT CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL ;
+      7) ALTER TABLE `news` ADD `user_id` INT NOT NULL ;
+      8) UPDATE db_version SET current_version =3;
+
+

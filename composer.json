@@ -1,0 +1,28 @@
+{
+    "name": "cannabiss/doclib",
+    "description": "Easy documentation and reading technical documentation.",
+    "authors": [
+        {
+            "name": "Sergey Schetkin",
+            "email": "mrschetkin@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "files": [
+            "common/db.php",
+            "common/route.php",
+            "common/auth.php",
+            "common/ManagerUrl.php",
+            "common/common.php",
+            "common/components.php",
+            "common/IncFiles.php",
+            "common/model.php",
+            "common/TableManager.php",
+            "common/view.php",
+            "common/menu.php"
+        ]
+    }
+}
